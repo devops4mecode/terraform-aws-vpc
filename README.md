@@ -47,23 +47,23 @@ This module has a few dependencies:
 ## Examples
 
 
-**IMPORTANT:** Since the `master` branch used in `source` varies based on new modifications, we suggest that you use the release versions [here](https://github.com/clouddrove/terraform-aws-vpc/releases).
+**IMPORTANT:** Since the `master` branch used in `source` varies based on new modifications, we suggest that you use the release versions [here](https://github.com/devops4mecode/terraform-aws-vpc/releases).
 
 
 ### Simple Example
 Here is an example of how you can use this module in your inventory structure:
   ```hcl
   module "vpc" {
-      source      = "clouddrove/vpc/aws"
-      version     = "0.13.0"
+      source      = "devpops4mecode/vpc/aws"
+      version     = "1.1.0"
       name        = "vpc"
-      application = "clouddrove"
+      application = "devops4me"
       environment = "test"
       label_order = ["environment", "name", "application"]
       cidr_block  = "10.0.0.0/16"
     }
   ```
-  
+
 ## Inputs
 
 | Name | Description | Type | Default | Required |

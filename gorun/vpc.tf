@@ -22,7 +22,7 @@ module "vpc" {
   source = "../"
 
   name        = "vpc"
-  application = "devops"
+  application = "devops4me"
   environment = "test"
   label_order = ["environment", "application", "name"]
 
