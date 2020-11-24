@@ -68,7 +68,7 @@ Here is an example of how you can use this module in your inventory structure:
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| application | Application (e.g. `cd` or `clouddrove`). | `string` | `""` | no |
+| application | Application (e.g. `do4m` or `devops4me`). | `string` | `""` | no |
 | attributes | Additional attributes (e.g. `1`). | `list` | `[]` | no |
 | cidr\_block | CIDR for the VPC. | `string` | `""` | no |
 | enable\_classiclink | A boolean flag to enable/disable ClassicLink for the VPC. | `bool` | `false` | no |
@@ -79,7 +79,7 @@ Here is an example of how you can use this module in your inventory structure:
 | environment | Environment (e.g. `prod`, `dev`, `staging`). | `string` | `""` | no |
 | instance\_tenancy | A tenancy option for instances launched into the VPC. | `string` | `"default"` | no |
 | label\_order | Label order, e.g. `name`,`application`. | `list` | `[]` | no |
-| managedby | ManagedBy, eg 'CloudDrove' or 'AnmolNagpal'. | `string` | `"anmol@clouddrove.com"` | no |
+| managedby | ManagedBy, eg 'DevOps4Me' or 'NajibRadzuan'. | `string` | `"najibradzuan@devops4me.com"` | no |
 | name | Name  (e.g. `app` or `cluster`). | `string` | `""` | no |
 | s3\_bucket\_arn | S3 ARN for vpc logs. | `string` | `""` | no |
 | tags | Additional tags (e.g. map(`BusinessUnit`,`XYZ`). | `map` | `{}` | no |
