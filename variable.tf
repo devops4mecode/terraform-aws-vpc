@@ -9,7 +9,7 @@ variable "name" {
 variable "application" {
   type        = string
   default     = ""
-  description = "Application (e.g. `cd` or `DevOps4Me`)."
+  description = "Application (e.g. `do4m` or `DevOps4Me`)."
 }
 
 variable "environment" {
@@ -27,7 +27,7 @@ variable "label_order" {
 
 variable "managedby" {
   type        = string
-  default     = "anmol@DevOps4Me.com"
+  default     = "najibradzuan@devops4me.com"
   description = "ManagedBy, eg 'DevOps4Me' or 'NajibRadzuan'."
 }
 
