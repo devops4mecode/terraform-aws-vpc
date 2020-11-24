@@ -25,5 +25,5 @@ module "vpc" {
   cidr_block = "10.0.0.0/16"
 
   enable_flow_log = true
-  s3_bucket_arn   = module.s3_bucket.arn
+  s3_bucket_arn   = module.s3.arn
 }
