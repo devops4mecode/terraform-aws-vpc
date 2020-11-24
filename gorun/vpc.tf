@@ -4,14 +4,12 @@ provider "aws" {
 
 module "s3" {
   source  = "devops4mecode/s3/aws"
-  version = "1.1.0"
+  version = "1.4.0"
 
-  name        = "log-bucket"
+  name        = "s3bucket"
   application = "devops4me"
   environment = "test"
   label_order = ["environment", "application", "name"]
-
-
 
   versioning     = true
   acl            = "private"
@@ -21,7 +19,7 @@ module "s3" {
 module "vpc" {
   source = "../"
 
-  name        = "vpc"
+  name        = "do4m-vpc"
   application = "devops4me"
   environment = "test"
   label_order = ["environment", "application", "name"]

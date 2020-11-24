@@ -1,6 +1,6 @@
-// Managed By : CloudDrove
+// Managed By : DevOps4Me
 // Description : This Terratest is used to test the Terraform VPC module.
-// Copyright @ CloudDrove. All Right Reserved.
+// Copyright @ DevOps4Me. All Right Reserved.
 package test
 
 import (
@@ -28,7 +28,7 @@ func Test(t *testing.T) {
 	Tags := terraform.OutputMap(t, terraformOptions, "tags")
 
 	// Check that we get back the outputs that we expect
-	assert.Equal(t, "test-devops4me-vpc", Tags["Name"])
+	assert.Equal(t, "do4m-vpc-devops4me-test", Tags["Name"])
 	assert.Contains(t, Id, "vpc")
 
 }

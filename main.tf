@@ -7,14 +7,12 @@
 #              for resources. You can use terraform-labels to implement a strict naming
 #              convention.
 module "labels" {
-  source = "git::https://gitlab.com/devops4me-automation/terraform-label.git?ref=tags/v1.0.0"
+  source = "git::https://gitlab.com/devops4me-automation/terraform-label.git"
 
-  name        = var.name
-  application = var.application
-  environment = var.environment
-  managedby   = var.managedby
-  label_order = var.label_order
-  enabled     = var.vpc_enabled
+  name        = "do4m-vpc"
+  application = "devops4me"
+  environment = "test"
+  label_order = ["name", "application", "environment"]
 }
 
 #Module      : VPC
